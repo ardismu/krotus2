@@ -37,8 +37,8 @@ h1, h2, h3, h4, h5, h6 {
   inset: 0;
   z-index: 9999;
   overflow: hidden;
-  background: var(--color-white);
-  transition: all 0.3s ease-out;
+  background: var(--color-orange);
+  transition: all 0.2s ease-out;
   width: 100%;
   height: 100vh;
 }
@@ -51,8 +51,8 @@ h1, h2, h3, h4, h5, h6 {
   animation: animate-preloader 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
 #preloader:after {
-  -webkit-animation-delay: -0.3s;
-  animation-delay: -0.3s;
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
 }
 
 @-webkit-keyframes animate-preloader {

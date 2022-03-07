@@ -273,7 +273,7 @@ section {
     justify-content: space-between;
     padding: 14px 20px;
     font-family: var(--font-secondary);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     color: rgba(var(--color-secondary-dark-rgb), 0.7);
     white-space: nowrap;
@@ -281,7 +281,7 @@ section {
     position: relative;
   }
   .navbar a i, .navbar a:focus i {
-    font-size: 12px;
+    font-size: 18px;
     line-height: 0;
     margin-left: 5px;
   }
@@ -333,7 +333,7 @@ section {
     font-size: 15px;
     text-transform: none;
     font-weight: 400;
-    color: rgba(var(--color-white-rgb), 0.5);
+    color: rgba(var(--color-white-rgb), 0.8);
   }
   .navbar .dropdown ul a i {
     font-size: 12px;

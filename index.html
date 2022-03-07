@@ -28,10 +28,10 @@
   <!-- Template Main CSS Files -->
   <link href="assets/css/variables.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/slidercss.css" rel="stylesheet">
 </head>
 
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top" data-scrollto-offset="0">
     <div class="container-fluid d-flex align-items-center justify-content-between">
@@ -45,14 +45,14 @@
         <ul>
           <li class="dropdown"><a href="#"><span>About Us</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#">Krotus Group Limited</a></li>
+              <li><a href="team.html">Krotus Group Limited</a></li>
               <li><a href="#">Where we operate</a></li>
               <li><a href="#">Our leadership</a></li>
               <li><a href="#">Our strategy</a></li>
               <li><a href="#">Sustainability</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="team.html">Team</a></li>
           <li class="dropdown"><a href="#"><span>How We Work</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="#">Code of Business</a></li>
@@ -72,87 +72,65 @@
       <a class="btn-getstarted scrollto" href="index.html#about">Contact Us</a>
 
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero carousel  carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+  <!--SLIDESHOW 2 BY W3-->
+  <!-- Slideshow container -->
+  <section>
+      <div class="slideshow-container">
 
-    <div class="carousel-item active">
-      <div class="container">
-        <div class="row justify-content-center gy-6">
-
-          <div class="col-lg-5 col-md-8">
-            <img src="assets/img/hero-carousel/hero1.jpg" alt="" class="img-fluid img">
-          </div>
-
-          <div class="col-lg-9 text-center">
-            <h2>Welcome to Krotus</h2>
-            <p>KROTUS GROUP LTD is a privately owned construction company which teams up with a group of creative 
-              professional consultants to service our clients with our collective experience. It is a multidisciplinary construction 
-              company structured around the key disciplines of architecture, interior design, landscape architecture, structural design, 
-              building and project management, with integrated sustainability and assured final product.</p>
-            <a href="#featured-services" class="btn-get-started scrollto ">Get Started</a>
-          </div>
-
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="img1.jpg" class="hero-image">
+          <div class="text col-md-6 col-6">
+              <h2>Welcome to Krotus</h2>
+              <p>KROTUS GROUP LTD is a privately owned construction company which teams up with a group of creative 
+                professional consultants to service our clients with our collective experience. It is a multidisciplinary construction 
+                company structured around the key disciplines of architecture, interior design, landscape architecture, structural design, 
+                building and project management, with integrated sustainability and assured final product.</p>
+              <a href="#featured-services" class="btn-get-started scrollto ">Get Started</a>
+            </div>
         </div>
-      </div>
-    </div><!-- End Carousel Item -->
 
-    <div class="carousel-item">
-      <div class="container">
-        <div class="row justify-content-center gy-6">
-
-          <div class="col-lg-5 col-md-8">
-            <img src="assets/img/hero10.jpg" alt="" class="img-fluid img">
-          </div>
-
-          <div class="col-lg-9 text-center">
-            <h2>What we do</h2>
-            <p>KROTUS GROUP Ltd takes pride in its ability to creatively deliver construction and deliver outcomes that are driven 
-              by understanding clients' needs. The results are unique and exceed client expectations and as we put it, we are “Committed 
-              to Building Excellence". </p>
-            <a href="#about" class="btn-get-started scrollto ">Specialization</a>
-          </div>
-
+        <div class="mySlides fade">
+          <img src="img2.jpg"class="hero-image">
+          <div class="text col-md-6 col-6">
+              <h2>What we do</h2>
+              <p>KROTUS GROUP Ltd takes pride in its ability to creatively deliver construction and deliver outcomes that are driven 
+                by understanding clients' needs. The results are unique and exceed client expectations and as we put it, we are “Committed 
+                to Building Excellence". </p>
+              <a href="#about" class="btn-get-started scrollto ">Specialization</a>
+            </div>
         </div>
-      </div>
-    </div><!-- End Carousel Item -->
 
-    <div class="carousel-item">
-      <div class="container">
-        <div class="row justify-content-center gy-6">
-
-          <div class="col-lg-5 col-md-8">
-            <img src="assets/img/hero-carousel-3.jpg" alt="" class="img-fluid img">
-          </div>
-
-          <div class="col-lg-9 text-center">
+        <div class="mySlides fade">
+          <img src="img3.jpg" class="hero-image">
+          <div class="text col-md-6 col-6">
             <h2>Why choose us</h2>
             <p>We seek to provide affordable, smart and innovative construction that reflects the advancement of technology. We are 
               committed to developing modern state of the art construction, successfully and within the set project time lines and a 
               stress-free relation with our clients. </p>
             <a href="#featured-services" class="btn-get-started scrollto ">Read More</a>
           </div>
-
         </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> <br>
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
       </div>
-    </div><!-- End Carousel Item -->
+    </div>
+    </section>
 
-    <a class="carousel-control-prev" href="#hero" role="button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-    </a>
-
-    <a class="carousel-control-next" href="#hero" role="button" data-bs-slide="next">
-      <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-    </a>
-
-    <ol class="carousel-indicators"></ol>
-
-  </section><!-- End Hero Section -->
-
+<!--AFTER PAGE-->
   <main id="main">
 
-  <!-- ======= About Section ======= -->
+    <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
@@ -243,7 +221,8 @@
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section>
+    <!-- End About Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio" data-aos="fade-up">
@@ -252,12 +231,10 @@
 
         <div class="section-header">
           <h2>Our Projects</h2>
-          <p>Non hic nulla eum consequatur maxime ut vero memo vero totam officiis pariatur eos dolorum sed fug dolorem est possimus esse quae repudiandae. Dolorem id enim officiis sunt deserunt esse soluta consequatur quaerat</p>
         </div>
-
       </div>
 
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="200">
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
 
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
 
@@ -388,182 +365,28 @@
     <!-- ======= On Focus Section ======= -->
     <section id="onfocus" class="onfocus">
       <div class="container-fluid p-0" data-aos="fade-up">
-
         <div class="row g-0">
           <div class="col-lg-6 video-play position-relative">
-            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+            <a href="https://www.youtube.com/watch?v=UokY_YFS3JM" class="glightbox play-btn"></a>
           </div>
           <div class="col-lg-6">
-            <div class="content d-flex flex-column justify-content-center h-100">
-              <h3>Voluptatem dignissimos provident quasi corporis</h3>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul>
-              <a href="#" class="read-more align-self-start"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            <div class="content d-flex flex-column justify-content-center h-80">
+              <h4>Latest from our Facebook page</h4>
+               <!-- <div class="col-md-8 col-sm-12 col-8">
+               Page plugin's width will be 190px -->
+                <div class="fb-page" data-tabs="timeline,events,messages" data-href="https://www.facebook.com/giftshopKe" data-width="500px" data-height:300px></div>
+                </div>
+              <div class="content d-flex flex-column justify-content-center h-80" style="max-height:400px">
+                <h4>Latest from our Twitter page</h4>
+                <!-- <div class="col-md-8 col-sm-12 col-8">
+                Page plugin's width will be 190px -->
+                <a class="twitter-timeline" href="https://twitter.com/ardis_mu?ref_src=twsrc%5Etfw">Tweets by ardis_mu</a>
+                </div>
             </div>
           </div>
         </div>
 
-      </div>
     </section><!-- End On Focus Section -->
-
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container" data-aos="fade-up">
-
-        <div class="testimonials-slider swiper">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Recent Blog Posts Section ======= -->
-    <section id="recent-blog-posts" class="recent-blog-posts">
-
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Blog</h2>
-          <p>Recent posts form our Blog</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">Tue, December 12</span>
-                <span class="post-author"> / Julia Parker</span>
-              </div>
-              <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
-              <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium. Asperiores eum ipsa est officiis. Modi cupiditate exercitationem qui magni est...</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">Fri, September 05</span>
-                <span class="post-author"> / Mario Douglas</span>
-              </div>
-              <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
-              <p>Voluptatem nesciunt omnis libero autem tempora enim ut ipsam id. Odit quia ab eum assumenda. Quisquam omnis aliquid necessitatibus tempora consectetur doloribus...</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div>
-              <div class="meta">
-                <span class="post-date">Tue, July 27</span>
-                <span class="post-author"> / Lisa Hunter</span>
-              </div>
-              <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
-              <p>Quia nam eaque omnis explicabo similique eum quaerat similique laboriosam. Quis omnis repellat sed quae consectetur magnam veritatis dicta nihil...</p>
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- End Recent Blog Posts Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -748,6 +571,12 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/slider3.js"></script>
+
+  <!-- ScRIPRS for FB Page PlugIns-->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v13.0" nonce="h4guGxYR"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </body>
 

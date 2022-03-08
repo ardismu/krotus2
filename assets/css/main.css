@@ -37,8 +37,8 @@ h1, h2, h3, h4, h5, h6 {
   inset: 0;
   z-index: 9999;
   overflow: hidden;
-  background: var(--color-white);
-  transition: all 0.3s ease-out;
+  background: var(--color-orange);
+  transition: all 0.2s ease-out;
   width: 100%;
   height: 100vh;
 }
@@ -47,12 +47,12 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   border: 4px solid var(--color-primary);
   border-radius: 50%;
-  -webkit-animation: animate-preloader 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-  animation: animate-preloader 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  -webkit-animation: animate-preloader 1s cubic-bezier(0, 0.2, 0.5, 1) infinite;
+  animation: animate-preloader 1s cubic-bezier(0, 0.2, 0.5, 1) infinite;
 }
 #preloader:after {
-  -webkit-animation-delay: -0.3s;
-  animation-delay: -0.3s;
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s;
 }
 
 @-webkit-keyframes animate-preloader {
@@ -273,7 +273,7 @@ section {
     justify-content: space-between;
     padding: 14px 20px;
     font-family: var(--font-secondary);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     color: rgba(var(--color-secondary-dark-rgb), 0.7);
     white-space: nowrap;
@@ -281,7 +281,7 @@ section {
     position: relative;
   }
   .navbar a i, .navbar a:focus i {
-    font-size: 12px;
+    font-size: 18px;
     line-height: 0;
     margin-left: 5px;
   }
@@ -333,7 +333,7 @@ section {
     font-size: 15px;
     text-transform: none;
     font-weight: 400;
-    color: rgba(var(--color-white-rgb), 0.5);
+    color: rgba(var(--color-white-rgb), 0.8);
   }
   .navbar .dropdown ul a i {
     font-size: 12px;
@@ -504,7 +504,7 @@ section {
   animation: fadeInDownLite 1s both;
 }
 .hero .btn-get-started {
-  font-family: var(--font-secondary);
+  font-family: var(--font-default);
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 1px;

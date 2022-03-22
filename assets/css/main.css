@@ -58,6 +58,14 @@ body {
   color: #fffff1;
 }
 
+.slider__navbar:hover {
+  color: #f97233;
+}
+
+.slider__navbar:hover:after {
+  background-color: #f97233;
+}
+
 .underlink {
   position: relative;
 }
@@ -145,6 +153,19 @@ body {
   z-index: 10;
 }
 
+.slider__nav > .dropTh {
+  display: none;
+  position: relative;
+}
+
+.slider__nav > .dropTh::before {
+  display: none;
+}
+
+.slider__nav > .dropTh:hover {
+  display: list-item;
+}
+
 .slider__nav > ul {
   margin: 0;
   padding-left: 0;
@@ -167,8 +188,12 @@ body {
   text-decoration: none;
 }
 
+.slider__nav > ul > li > a:hover {
+  color: #fc6018;
+}
+
 .slider__nav > ul > li:hover, .slider__nav > ul > li.active {
-  color: #ff8d58;
+  color: #f97233;
 }
 
 @media (min-width: 48em) {
@@ -248,13 +273,17 @@ body {
   padding: 0 3vw;
   font-weight: 800;
   position: relative;
-  -webkit-transition: all 0.5s ease-in, color 0.125s linear, background-color 0.125s linear;
-  transition: all 0.5s ease-in, color 0.125s linear, background-color 0.125s linear;
+  -webkit-transition: all 0.5s ease-in,
+ color 0.125s linear,
+ background-color 0.125s linear;
+  transition: all 0.5s ease-in,
+ color 0.125s linear,
+ background-color 0.125s linear;
 }
 
 .slider__title:hover {
   color: #111f24;
-  background-color: #fa9160;
+  background-color: #f97233;
 }
 
 .slider__title:before, .slider__title:after {
@@ -391,6 +420,54 @@ body {
   opacity: 100%;
 }
 
+/* Dropdown Button */
+.dropbtn {
+  color: white;
+  padding: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  font-size: 1.35rem;
+  display: none;
+  position: absolute;
+  background-color: rgba(25, 29, 34, 0.2);
+  padding-top: 2vw;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #fffff1;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: #f97233;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
@@ -675,6 +752,7 @@ section {
 
 .section-header {
   text-align: center;
+  padding-top: 5vh;
   padding-bottom: 40px;
 }
 

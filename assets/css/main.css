@@ -754,9 +754,16 @@ section {
 
 .section-header h2 {
   font-size: 48px;
-  font-weight: 300;
   margin-bottom: 20px;
   color: var(--color-secondary);
+}
+
+.section-header ol li .darker, .section-header ul li .darker {
+  font-weight: 500;
+}
+
+.section-header .darker {
+  font-weight: 600;
 }
 
 .section-header p {
@@ -768,6 +775,25 @@ section {
   .section-header p {
     max-width: 80%;
   }
+}
+
+.how_info {
+  padding: 1vh;
+  margin-left: 0.5vw;
+  text-align: justify;
+}
+
+.how_info p {
+  padding: 0 2vw;
+}
+
+/*HIGHTLIGHT TEXT*/
+.hightLight:hover {
+  background-color: rgba(26, 31, 36, 0.005);
+  color: #fd7e14;
+  font-size: 1em;
+  -webkit-animation: background-color 1s ease-in-out;
+          animation: background-color 1s ease-in-out;
 }
 
 /*--------------------------------------------------------------

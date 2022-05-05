@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,900");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 @import url(variables.css);
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -330,7 +331,8 @@ body {
   transition: -webkit-transform 7s linear;
   transition: transform 7s linear;
   transition: transform 7s linear, -webkit-transform 7s linear;
-  background-color: rgba(25, 29, 34, 0.85);
+  background: linear-gradient(55deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.6) 90%);
+  /*background-color: rgba(25, 29, 34, 0.35);*/
   -webkit-transition: background-color 1s;
   transition: background-color 1s;
 }
@@ -748,7 +750,7 @@ section {
 
 .section-header {
   text-align: center;
-  padding-top: 5vh;
+  padding-top: 2vh;
   padding-bottom: 40px;
 }
 
@@ -767,8 +769,9 @@ section {
 }
 
 .section-header p {
+  text-align: center;
   margin: 0 auto;
-  color: var(--color-secondary-light);
+  color: #111f24;
 }
 
 @media (min-width: 1280px) {
@@ -1520,6 +1523,14 @@ section {
 
 .about .nav-pills {
   border-bottom: 1px solid rgba(var(--color-secondary-rgb), 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about .nav-pills li + li {

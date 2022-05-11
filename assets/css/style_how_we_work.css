@@ -156,6 +156,7 @@
           margin-left: 0.5em;
         }
         .readBtn{
+          font-size: 0.9em;
           position: relative;
           color: #f97233;
           background-color: #fff;
@@ -197,8 +198,8 @@
         top:auto;
         margin: auto;
         min-width: 100vw;
-        min-height: 80vh;
-        max-height: 80vh;
+        min-height: 90vh;
+        max-height: 90vh;
         background: rgb(0,0,0);
         background: linear-gradient(55deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.9) 90%);
         -webkit-transition: background-color 1s;
@@ -209,8 +210,8 @@
         top:auto;
         margin: auto;
         min-width: 100vw;
-        min-height: 80vh;
-        max-height: 80vh;
+        min-height: 90vh;
+        max-height: 90vh;
         background: rgb(0,0,0);
         /*background: linear-gradient(125deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.9) 90%);*/
         background: linear-gradient(125deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0) 100%);
@@ -219,12 +220,12 @@
       }
 
       .gradHowTitle{
-        margin-left:5vw;
+        margin-left:6vw;
         padding: 25vh 4em;
         align-content: center;
       }
       .gradHowTitle2{
-        margin-right:5vw;
+        margin-right:7vw;
         padding: 25vh 4em;
         float:right;
         align-content: center;
@@ -241,3 +242,4 @@
             {
               .fader{transition:none}
             }
+

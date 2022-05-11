@@ -782,9 +782,9 @@ section {
 
 .sidebar {
   position: fixed;
-  top: 40vh;
-  left: 0vw;
-  padding: 0 0 0 2vw;
+  top: 50vh;
+  right: 0vw;
+  padding: 0 2vw 0 0;
   z-index: 99;
 }
 
@@ -797,7 +797,7 @@ section {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  color: #111f24;
+  color: #fffff1;
 }
 
 .sidebar a:after {
@@ -806,14 +806,14 @@ section {
   bottom: -0.5vh;
   left: 0rem;
   width: 5rem;
-  height: 0.175rem;
-  background-color: #111f24;
+  height: 0.1rem;
+  background-color: #fffff1;
   -webkit-transition: all 0.25s cubic-bezier(0.5, -0.5, 0.5, 1.5);
   transition: all 0.25s cubic-bezier(0.5, -0.5, 0.5, 1.5);
 }
 
 .sidebar li, .sidebar a:hover {
-  color: #fa9160;
+  color: #f97233;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
@@ -851,20 +851,20 @@ section {
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
-.breadcrumbs {
+.breadcrumbs, .breadcrumbsDark {
   padding: 15px 0;
   background: rgba(var(--color-secondary-rgb), 0.03);
   min-height: 40px;
   margin-top: 0;
 }
 
-.breadcrumbs h2 {
+.breadcrumbs h2, .breadcrumbsDark h2 {
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 350;
   margin: 0;
 }
 
-.breadcrumbs ol {
+.breadcrumbs ol, .breadcrumbsDark ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -876,30 +876,37 @@ section {
   font-size: 14px;
 }
 
-.breadcrumbs ol li + li {
+.breadcrumbs ol li + li, .breadcrumbsDark ol li + li {
   padding-left: 10px;
 }
 
 .breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
-  color: var(--color-secondary-light);
+  color: var(--color-white);
+  content: "/";
+}
+
+.breadcrumbsDark ol li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: var(--color-secondary);
   content: "/";
 }
 
 @media (max-width: 992px) {
-  .breadcrumbs .d-flex {
+  .breadcrumbs .d-flex, .breadcrumbsDark .d-flex {
     display: block !important;
   }
-  .breadcrumbs h2 {
+  .breadcrumbs h2, .breadcrumbsDark h2 {
     margin-bottom: 10px;
     font-size: 24px;
   }
-  .breadcrumbs ol {
+  .breadcrumbs ol, .breadcrumbsDark ol {
     display: block;
     font-weight: 600;
   }
-  .breadcrumbs ol li {
+  .breadcrumbs ol li, .breadcrumbsDark ol li {
     display: inline-block;
     font-weight: 600;
   }
@@ -1315,7 +1322,8 @@ section {
 }
 
 .footer .footer-content {
-  background: var(--color-secondary);
+  background: #191d22;
+  /*background: var(--color-secondary);*/
   padding: 60px 0 30px 0;
 }
 

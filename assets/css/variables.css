@@ -29,7 +29,7 @@
   /* The *-rgb color names are simply the RGB converted value of the corresponding color for use in the rgba() function */
 
   /* Default text color */
-  --color-default: #111f24;
+  --color-default: #1a1f24;
   --color-default-rgb: 26, 31, 36;
 
   /* Defult links color */
@@ -47,8 +47,8 @@
 
   /* Secondary colors */
   --color-secondary: #191d22;
-  --color-secondary-light: #8f9fae;
-  --color-secondary-dark: #060c13;
+  --color-secondary-light: #3a4753;
+  --color-secondary-dark: #111f24;
 
   --color-secondary-rgb: 72, 86, 100;
   --color-secondary-light-rgb: 143, 159, 174;
@@ -85,7 +85,7 @@
   --color-cyan: #0dcaf0;
   --color-cyan-rgb: 13, 202, 240;
 
-  --color-white: #ffffff;
+  --color-white: #fffff1;
   --color-white-rgb: 255, 255, 255;
 
   --color-gray: #6c757d;

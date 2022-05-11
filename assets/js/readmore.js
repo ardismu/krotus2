@@ -16,10 +16,31 @@
 */
 
 /**<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>*/
-//flip1
+
+/*	$(window).scroll(function() {
+		if ($(this).scrollTop() > 200) { //use `this`, not `document`
+			//$("#sidebar").css({
+			//	'display': 'none'
+			// });
+			$('.sidebar').hide();
+		}
+	});
+*/
+	$(window).scroll(function() {
+		if ($(this).scrollTop()>220)
+		 {
+			$('.sidebar').hide(1000);
+		 }
+		else
+		 {
+		  $('.sidebar').show(1000);
+		 }
+	 });
+
+	//flip1
 		$(document).ready(function(){
 
-//Fader Manual Automation
+//ABOUTUS - Fader - Manual Automation
 		$("#tab1Pointer").click(function(){
 			$("#tab1").show();
 			$("#tab2").hide();
